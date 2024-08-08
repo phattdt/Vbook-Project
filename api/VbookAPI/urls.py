@@ -17,8 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from . import views
+from .views import data_view
+
 urlpatterns = [
     path('', views.get_home),
     path('login', views.get_login),
+    path('data/', data_view, name='data_view'),
 
 ]

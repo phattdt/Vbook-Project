@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'VbookAPI',
 ]
 
@@ -82,14 +83,8 @@ DATABASES = {
         'USER': 'root',  # 作ったユーザー名
         'PASSWORD': 'example',  # ユーザー作った時のパスワード
         'HOST': 'localhost',  # noqa
-        'PORT': '3306',
-        'ATOMIC_REQUESTS': True,
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
-        'TEST': {
-            'NAME': 'test_mtg3m',
-        }}
+        'PORT': '3306'
+    }
 }
 
 
